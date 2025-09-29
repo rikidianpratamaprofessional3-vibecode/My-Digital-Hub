@@ -1,0 +1,90 @@
+/* ⚙️ Basic Reset and Setup */
+body {
+    font-family: 'Roboto', sans-serif; /* Use a modern, readable font */
+    background-color: #f0f4f8; /* Light blue/gray background */
+    color: #333;
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Start content near the top */
+    min-height: 100vh;
+}
+
+/* 📱 Main Container */
+.container {
+    width: 100%;
+    max-width: 600px; /* Max width for desktop viewing */
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* 👤 Profile Styling */
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 4px solid #fff; /* White border for contrast */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile h1 {
+    font-size: 1.8em;
+    color: #1e293b; /* Darker heading color */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.profile p {
+    font-size: 1.1em;
+    color: #64748b; /* Subtler text color */
+    margin-bottom: 30px;
+}
+
+
+/* 🔗 Link Buttons Styling */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between buttons */
+}
+
+.link-button {
+    text-decoration: none; /* Remove underline from links */
+    background-color: #4f46e5; /* Primary accent color (Purple) */
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid #4f46e5;
+}
+
+/* 🖱️ Hover and Active States */
+.link-button:hover {
+    background-color: #4338ca; /* Slightly darker purple on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.link-button:active {
+    transform: translateY(2px); /* Click effect */
+}
+
+/* 🦶 Footer Styling */
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #94a3b8;
+}
+
+/* 📱 Responsive Design (Optional, but good practice) */
+@media (max-width: 480px) {
+    .link-button {
+        padding: 12px 20px; /* Slightly smaller buttons on small screens */
+    }
+}
